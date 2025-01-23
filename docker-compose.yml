@@ -2,11 +2,22 @@ services:
   redirector:
     build:
       context: .
-      network: "host"
-    ports:
-      - "9199:9199"
-    network_mode: "host"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.redirector.rule=Host(`${WEB_HOST}`)"
+      - "traefik.http.routers.redirector.entrypoints=websecure"
+      - "traefik.http.routers.redirector.tls.certresolver=myresolver"
+    networks:
+      - proxy
     volumes:
       - ./data:/app/data
       - ./static/img:/app/static/img
+    dns:
+      - 1.1.1.1
+      - 8.8.8.8
+    env_file:
+      - .env
 
+networks:
+  proxy:
+    external: true  # Connect to the Traefik proxy network

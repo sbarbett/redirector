@@ -6,6 +6,7 @@ COPY redirector.py /app/
 COPY static /app/static/
 
 RUN pip install flask
+RUN pip install python-dotenv
 
 EXPOSE 9199
 
