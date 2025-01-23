@@ -1,0 +1,12 @@
+services:
+  redirector:
+    build:
+      context: .
+      network: "host"
+    ports:
+      - "9199:9199"
+    network_mode: "host"
+    volumes:
+      - ./data:/app/data
+      - ./static/img:/app/static/img
+
