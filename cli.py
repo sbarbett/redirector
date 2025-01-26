@@ -3,8 +3,13 @@ import os
 import requests
 import json
 
-DB_PATH = "data/database.db"
-STATIC_IMG_PATH = "static/img"
+# Get the directory where the script is located
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+# Define the database path relative to the script location
+DB_PATH = os.path.join(BASE_DIR, "data", "database.db")
+
+STATIC_IMG_PATH = os.path.join(BASE_DIR, "static", "img")
 
 def create_table():
     """Create the redirects table if it doesn't exist."""
