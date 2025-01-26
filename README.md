@@ -27,7 +27,7 @@ This is a simple app that generates redirect documents with custom meta tags. I 
 	python cli.py
 	```
 
-	![Screenshot of CLI tool](./screens/cli.jpg)
+	![Screenshot of CLI tool](./screens/cli-tool.jpg)
 
 3. **Access Redirects:** Navigate to the route you set up (e.g., https://your-domain.com/my-redirect). The app will render the specified metadata and redirect users to the target URL.
 
