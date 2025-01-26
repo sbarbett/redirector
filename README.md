@@ -37,7 +37,7 @@ The `/static` directory has `favicon.ico` and `apple-touch-icon.png` images whic
 
 ## Preview
 
-If you want to preview what your links look like on social media apps, [Zeloab has a free tool here](https://www.zelolab.com/free-tools/preview-as).
+If you want to preview what your links look like on social media apps, [Zelolab has a free tool here](https://www.zelolab.com/free-tools/preview-as).
 
 ![Screenshot of Zelolab tool](./screens/preview.jpg)
 
