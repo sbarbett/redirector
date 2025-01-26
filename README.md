@@ -1,6 +1,6 @@
 # redirector
 
-This is a simple app that generates redirect documents with custom meta tags. I built it to share links from my company's blog on LinkedIn because the platform wasn’t properly pulling screenshots or metadata from the source material. This app allows me to add my own screenshots and metadata for better presentation and sharing.
+This is an app that generates redirect documents with custom meta tags. I built it to share links from my company's blog on LinkedIn because the platform wasn’t properly pulling screenshots or metadata from the source material. This app allows me to add my own screenshots and metadata for better presentation and sharing.
 
 ## Features
 
