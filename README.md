@@ -26,6 +26,9 @@ This is a simple app that generates redirect documents with custom meta tags. I 
 	```bash
 	python cli.py
 	```
+
+	![Screenshot of CLI tool](./screens/cli.jpg)
+
 3. **Access Redirects:** Navigate to the route you set up (e.g., https://your-domain.com/my-redirect). The app will render the specified metadata and redirect users to the target URL.
 
 ## Favicons
@@ -36,6 +39,10 @@ The `/static` directory has `favicon.ico` and `apple-touch-icon.png` images whic
 
 If you want to preview what your links look like on social media apps, [Zeloab has a free tool here](https://www.zelolab.com/free-tools/preview-as).
 
+![Screenshot of Zelolab tool](./screens/preview.jpg)
+
 ## Debug
 
 Adding `?debug=true` to the end of your redirect link will disable the automatic redirection, so you can inspect the page if needed.
+
+![Screenshot of debug](./screens/debug.jpg)
